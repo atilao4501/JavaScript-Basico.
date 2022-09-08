@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex002</title>
+    <style>
+      body {
+        background: rgb(245, 51, 83);
+        font: normal 15pt Arial;
+      }
+      header {
+        color: white;
+        text-align: center;
+      }
+      section {
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+        box-shadow: 5px 5px 10px black;
+      }
+      footer {
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Verificador de Idade</h1></header>
+    <section>
+      <div id="res">
+        <p>
+          Ano de Nascimento:
+          <input type="number" name="txtano" id="txtano" min="0" />
+        </p>
+        <p>
+          Sexo: <input type="radio" name="radsex" id="masc" checked />
+          <label for="masc">Masculino</label>
+          <input type="radio" name="radsex" id="fem" /><label for="fem"
+            >Feminino</label
+          >
+        </p>
+        <p><Input type="button" value="Verificar" onclick="verificar()"></Input></p>
+      </div>
+      <div id="res">
+        Preencha os dados acima.
+      </div>
+    </section>
+    <footer>
+      <p>&copy; atilao45</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
