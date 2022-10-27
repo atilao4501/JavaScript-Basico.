@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex003</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header><h1>Divisor de contas(de modo justo)</h1></header>
+    <section>
+      <div>
+        <p>Nome(insira um por vez e clique no botão): <input type="text" id="nome" min="" /></p>
+        <p>
+          <input type="button" value="Adicionar" onclick="adicionar()" />
+        </p>
+        <p id="adicionado"></p>
+        <p>Valor do Produto: <input type="number" id="valor" min="0" /></p>
+        <p>Quantas pessoas o compraram: <input type="number" id="quantidade" min="0" /></p>
+        <p>Nomes de quem comprou o produto(Adicione um de cada vez e clique no botão</p>
+        <p>Nome <input type="text" id="nomes" min="" /></p>
+        <p>
+          <input type="button" value="Adicionar" onclick="adicionarConta()" />
+        </p>
+        <div id="res">Insira os dados acima e clique no botão.</div>
+        <p>
+          <input type="button" value="Mostrar" onclick="imprimirConta()" />
+        </p>
+      </div>
+      <div>
+        <select name="contas" id="seltab"></select>
+    </section>
+    <footer>
+      <p>&copy; atilao45</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
